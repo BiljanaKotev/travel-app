@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Button from './Button';
 
 const Hero = () => {
   return (
@@ -21,6 +22,14 @@ const Hero = () => {
                 <Image src='/star.svg' key={index} alt='star' width={24} height={24} />
               ))}
           </div>
+          <p className='bold-16 lg:bold-20 text-blue-70'>
+            198K
+            <span className='regular-16 lg:regular-20 ml-1'>Excellent Reviews</span>
+          </p>
+        </div>
+        <div className='flex w-full gap-3 sm:flex-row'>
+          <Button type='button' title='Download App' variant='btn_green' />
+          <Button type='button' title='How we work?' icon='/play.svg' variant='btn_white_text' />
         </div>
       </div>
     </section>
